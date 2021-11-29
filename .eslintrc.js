@@ -19,7 +19,8 @@ module.exports = {
     "comma-dangle": ["error", "never"],
     "object-curly-newline": ["error", {
       "ImportDeclaration": "never",
-    }]
+    }],
+    '@typescript-eslint/explicit-module-boundary-types': ['off'],
   },
   overrides: [
     {

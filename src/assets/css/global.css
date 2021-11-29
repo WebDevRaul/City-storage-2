@@ -21,3 +21,8 @@ main {
 ul {
   list-style: none;
 }
+
+.error {
+  color: red;
+  margin: auto;
+}

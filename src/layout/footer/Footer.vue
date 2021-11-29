@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <h5>Developed by Savin Raul Calin</h5>
+    <p>Developed by Savin Raul Calin</p>
   </footer>
 </template>
 
@@ -13,7 +13,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-  h5 {
+  p {
     display: flex;
     align-items: center;
     justify-content: center;
