@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@vee-validate/rules": "^4.5.6",
+    "axios": "^0.24.0",
     "core-js": "^3.6.5",
+    "jwt-decode": "^3.1.2",
     "vee-validate": "^4.5.6",
     "vue": "^3.0.0",
     "vue-class-component": "^8.0.0-0",

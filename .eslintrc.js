@@ -21,6 +21,8 @@ module.exports = {
       "ImportDeclaration": "never",
     }],
     '@typescript-eslint/explicit-module-boundary-types': ['off'],
+    "no-return-assign": ["error", "always"],
+    "no-underscore-dangle": ["error", { "allow": ["state_", "_id"] }]
   },
   overrides: [
     {

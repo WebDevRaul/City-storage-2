@@ -2,14 +2,14 @@
   <main>
     <Title title="Sign In" />
     <VeeForm :validation-schema="schema" @submit="onSubmit">
-      <label for="email">Email:
+      <label for="email">Email :
         <VeeField
           name="email"
           type="email"
         />
         <ErrorMessage class="error" name="email" />
       </label>
-      <label for="password">Password:
+      <label for="password">Password :
         <VeeField
           name="password"
           type="password"
@@ -32,13 +32,18 @@ export default defineComponent({
     return {
       schema: {
         email: 'required|min:2|max:100|email',
-        password: 'required|min:8|max:100'
+        password: 'required|min:1|max:100'
       }
     };
   },
   methods: {
-    onSubmit(values: { email: string, password: string }) {
-      console.log(values);
+    async onSubmit(values: { email: string, password: string }) {
+      try {
+        await this.$store.dispatch('signIn', (values));
+        // this.$router.push({ name: 'signUp' });
+      } catch (e) {
+        console.log(e);
+      }
     }
   }
 });
