@@ -17,6 +17,9 @@ module.exports = {
     "linebreak-style": "off",
     "eol-last": ["error", "never"],
     "comma-dangle": ["error", "never"],
+    "object-curly-newline": ["error", {
+      "ImportDeclaration": "never",
+    }]
   },
   overrides: [
     {
