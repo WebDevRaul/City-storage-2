@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap');
 
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Playfair Display', serif;
   background-color: #ece6d9;
+  color: #757575;
+  letter-spacing: 1.5px;
+}
+
+main {
+  min-height: calc(100vh - 128px);
+}
+
+ul {
+  list-style: none;
 }

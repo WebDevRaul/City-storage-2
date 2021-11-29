@@ -1,5 +1,7 @@
 <template>
-  <p>Home</p>
+  <main>
+    <h1>City Storage</h1>
+  </main>
 </template>
 
 <script lang="ts">
@@ -10,6 +12,10 @@ export default defineComponent({
 });
 </script>
 
-<style>
-
+<style scoped>
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 </style>

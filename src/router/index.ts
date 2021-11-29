@@ -54,12 +54,13 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   if (!to.matched.some((record) => record.meta.requiresAuth)) {
     next();
+    return;
   }
 
   if (store.state.isAuth) {
     next();
   } else {
-    next({ name: 'home' });
+    next({ name: 'signIn' });
   }
 });
 
