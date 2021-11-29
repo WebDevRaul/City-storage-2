@@ -14,6 +14,9 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    "linebreak-style": "off",
+    "eol-last": ["error", "never"],
+    "comma-dangle": ["error", "never"],
   },
   overrides: [
     {

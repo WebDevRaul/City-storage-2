@@ -1,12 +1,12 @@
 <template>
-  <p>app</p>
+  <p>Four0Four</p>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'App'
+  name: 'Four0Four'
 });
 </script>
 
