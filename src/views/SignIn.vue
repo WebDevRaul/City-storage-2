@@ -32,15 +32,14 @@ export default defineComponent({
     return {
       schema: {
         email: 'required|min:2|max:100|email',
-        password: 'required|min:1|max:100'
+        password: 'required|min:8|max:100'
       }
     };
   },
   methods: {
-    async onSubmit(values: { email: string, password: string }) {
+    onSubmit(payload: { email: string, password: string }) {
       try {
-        await this.$store.dispatch('signIn', (values));
-        // this.$router.push({ name: 'signUp' });
+        this.$store.dispatch('signIn', { payload, router: this.$router });
       } catch (e) {
         console.log(e);
       }

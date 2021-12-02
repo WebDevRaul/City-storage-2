@@ -1,3 +1,5 @@
+import { Router } from 'vue-router';
+
 interface City {
   name: string
   code: string
@@ -11,8 +13,11 @@ interface UserState {
 }
 
 interface SignInState {
-  email: string,
-  password: string
+  payload: {
+    email: string,
+    password: string
+  }
+  router: Router
 }
 
 interface SignInResponse {
